@@ -4,11 +4,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orgofoods</title>
+    <title>FurniSense</title>
     <!--Linked bootstrap css file-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Linked google font-->
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Courgette&family=Kalam:wght@700&family=Lobster+Two:ital@1&family=Poppins:wght@200&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Amatic+SC:wght@700&family=Courgette&family=Kalam:wght@700&family=Lobster+Two:ital@1&family=Poppins:wght@200&display=swap" 
     rel="stylesheet">
     <!--Linked bootstrap js file-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -23,29 +23,28 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="my-0 py-2 navbar navbar-expand-lg navbar-light" style="background-color: #fafafa;">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#" style="color: #5fd42d; font-size: 30px; font-weight: 700;">ORGOFOODS</a>
+        <a class="navbar-brand" href="#" style="color: #6b4028; font-family: Dancing Script; font-size: 30px; font-weight: 700; letter-spacing: 2px;"><i>Furni<span style="color: #896540; font-family: Dancing Script;">Sense</span></i></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0" style=" font-size: 15px; font-weight: 600;">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page"  href="Home.html">HOME</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Shop.html">SHOP</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="About.html">ABOUT</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Contact.html">CONTACT</a>
+            </li>
+          </ul>
           <div class="d-flex">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0" style=" font-size: 20px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" style="color: #337100;" href="Home.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="color: #337100;" href="Shop.html">SHOP</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="color: #337100;" href="About.html">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="color: #337100;" href="Contact.html">CONTACT</a>
-                  </li>
-                </ul>
           </div>
         </div>
       </div>
@@ -53,277 +52,296 @@
     <!--Navigation Bar-->
     
     <!--Header-->
-    <div class="container-fluid" style="background: #6ab04c;">
-            <div id="carouselFade" class="mx-0 px-0 carousel carousel-fade slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active " data-bs-interval="3000">
-                  <img src="img_1.jpg" alt="image_1" loading="lazy" class="mx-0 px-0 img" width="100%" height="550px" class="d-block w-100" alt="">
-                  <div class="mx-0 px-0 carousel-caption d-none d-md-block" style="justify-content: bottom; align-items:self-start; margin: 0;">
-                      <h1 style="justify-content: center;font-family: 'Amatic SC', sans-serif; font-size: 85px; font-weight: 800; margin-top: 150px;">WE SERVE VEGETABLES & FRUITS</h1>
-                      <button type="button" class="btn btn-outline-success" style="margin: 100px; width: 250px;" onclick = "window.location.href='Shop.html';" >View More</button>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="img_2.jpg" alt="image_1" loading="lazy" class="img" width="100%" height="550px" class="d-block w-100" alt="">
-                  <div class="carousel-caption d-none d-md-block" style="justify-content: top; align-items:self-start; margin-left: 0;">
-                    <h1 style="justify-content: center;font-family: 'Amatic SC', sans-serif;font-size: 85px; margin-top: 150px;">100% FRESH & ORGANIC</h1>
-                    <button type="button" class="btn btn-outline-success" style="margin: 100px; width: 250px;" onclick = "window.location.href='Shop.html';" >View More</button>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="img_3.jpg" alt="image_1" loading="lazy" class="img" width="100%" height="550px" class="d-block w-100" alt="">
-                  <div class="carousel-caption d-none d-md-block" style="justify-content:baseline; align-items:self-start; margin-left: 0;">
-                      <h1 style="justify-content: center;font-family: 'Amatic SC', sans-serif;font-size: 85px; margin-top: 150px;">HEALTHY & TASTY</h1>
-                      <button type="button" class="btn btn-outline-success" style="margin: 100px; width: 250px;" onclick = "window.location.href='Shop.html';" >View More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    </div>
+    <div class="my-0 py-3 container-fluid" style="align-items: center; background-color: #fafafa;">
+      <div class="mx-0 px-0 my-3 py-3 row justify-content-center">
+          <div class="mx-0 px-0 col-sm-3 col-md-3 col-xl-3 col-xxl-3" style="background-image: url('https://img.freepik.com/premium-photo/memphis-style-conceptual-interior-home-office-3-d-illustration_652609-286.jpg'); background-size: cover; background-repeat: no-repeat; height: 70vh;"></div>
+          <div class="mx-2 my-3 pt-3 col-sm-3 col-md-5 col-xl-5 col-xxl-5">
+              <h6 style="letter-spacing: 2px; word-spacing: 5px; color: #312f2f;">OFFER FOR BEST INTERIOR</h6>
+              <h3 style="padding-top: 10px; font-size: 40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Furniture for Your Dream House</h3>
+              <p style="padding-top: 15px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto inventore, mollitia, veritatis hic exercitationem fuga accusamus nesciunt quaerat rem quam sequi, 
+              ipsum deserunt excepturi voluptas? Quos harum consequatur perspiciatis magni</p>
+            <button type="button" class="mt-3 btn btn-dark" style="width: 150px; border-radius: 25px;" onclick = "window.location.href='Shop.html';" >EXPLORE NOW</button>
+          </div>
+          <div class="mx-2 mb-3 col-sm-3 col-md-3 col-xl-3 col-xxl-3" style="background-image: url('https://img.freepik.com/premium-photo/memphis-style-conceptual-interior-room-3d-illustration_652609-158.jpg'); background-size: cover; background-repeat: no-repeat;  height: 70vh;"></div>
+      </div>
+  </div>
     <!--Header-->
 
     <!--Services-->
-    <div class="px-3 py-4 container-fluid" id="services" style="align-items: center;">
-      <div class="row" style="justify-content: center;">
-          <div class="py-2 col-sm-4 col-md-5 col-xl-2 col-xxl-2" style="height: 30vh;">
-            <img width="150" height="150" src="icon_1.png" alt="delivery--v1"/>
-            <h5 style="text-align: center; font-size: 15px;padding-top: 10px; font-weight: 600;">FREE SHIPPING</h5>
+    <div class="container-fluid" id="services" style="align-items: center; background-color: #d2b48c;">
+      <div class="mx-auto pt-3 row justify-content-center" >
+          <div class="col-sm-2 col-md-3 col-xl-2 col-xxl-2 " style="height: 30vh;">
+            <img width="75" height="75" src="https://img.icons8.com/ios/50/shipped.png" alt="shipped"/>
+            <h5 style="text-align: center; font-size: 20px;padding-top: 10px; font-weight: 600;">Fast Delivery</h5>
           </div>
-          <div class="py-2 col-sm-4 col-md-5 col-xl-2 col-xxl-2" style="height: 30vh;">
-            <img width="150" height="150" src="icon_2.png" alt="delivery--v1"/>
-            <h5 style="text-align: center; font-size: 15px;padding-top: 10px; font-weight: 600;">ALWAYS FRESH</h5>
+          <div class="col-sm-2 col-md-3 col-xl-2 col-xxl-2" style="height: 30vh;">
+            <img width="75" height="75" src="https://img.icons8.com/ios/50/card-security.png" alt="card-security"/>
+            <h5 style="text-align: center; font-size: 20px;padding-top: 10px; font-weight: 600;">Secure Payment</h5>
           </div>
-          <div class="py-2 col-sm-4 col-md-5 col-xl-2 col-xxl-2" style="height: 30vh;">
-            <img width="150" height="150" src="icon_3.png" alt="delivery--v1"/>
-            <h5 style="text-align: center; font-size: 15px;padding-top: 10px; font-weight: 600;">SUPERIOR QUALITY</h5>
+          <div class="col-sm-2 col-md-3 col-xl-2 col-xxl-2" style="height: 30vh;">
+            <img width="75" height="75" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/64/external-money-banking-and-financial-xnimrodx-lineal-xnimrodx-2.png" alt="money-transfer"/>
+            <h5 style="text-align: center; font-size: 20px;padding-top: 10px; font-weight: 600;">Repayment</h5>
           </div>
-          <div class="py-2 col-sm-4 col-md-5 col-xl-2 col-xxl-2" style="height: 30vh;">
-            <img width="150" height="150" src="icon_4.png" alt="delivery--v1"/>
-            <h5 style="text-align: center; font-size: 15px;padding-top: 10px; font-weight: 600;">SUPPORT</h5>
+          <div class="col-sm-2 col-md-3 col-xl-2 col-xxl-2" style="height: 30vh;">
+            <img width="75" height="75"  src="https://img.icons8.com/external-linector-lineal-linector/64/external-online-support-online-shopping-linector-lineal-linector.png" alt="online-support"/>
+            <h5 style="text-align: center; font-size: 20px;padding-top: 10px; font-weight: 600;">Online Support</h5>
           </div>
       </div>
     </div>
     <!--Services-->
 
     <!--Featured Products-->
-    <div class="my-4 container-fluid" id="products" style="align-items: center;">
-      <h3 class="py-4" style="color: #6ab04c; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">Featured Products</h3>
-      <h4 class="py-3" style="font-size: 15px; text-align: center; color: #312f2f;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h4>
-
-    <section class="my-2 products">
-		<div class="container">
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="vege_1.jpg" alt="vege_1" loading="lazy">
-					</div>
-					<div class="contentBx">
-            <h5>CARROTS<br><span>Rs.200.00</span></h5>
-					</div>
-				</div>
-        <ul class="sci">
-					<li>
-						<a href="Shop.html"><img src="icon_5.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-					<li>
-						<a href="VID001.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-          <li>
-						<a href="#"><img src="icon_7.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="vege_2.jpg" alt="vege_2">
-					</div>
-					<div class="contentBx">
-						<h5>BROCOLLI<br><span>Rs.200.00</span></h5>
-					</div>
-				</div>
-        <ul class="sci">
-					<li>
-						<a href="Shop.html"><img src="icon_5.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-					<li>
-						<a href="VID002.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-          <li>
-						<a href=""><img src="icon_7.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-				</ul>
-			</div>
-      <div class="card fruit">
-        <div class="content">
-            <div class="imgBx">
-                <img src="fruit_2.jpg" alt="fruit_2">
-            </div>
-            <div class="contentBx">
-                <h5>orange<br><span>Rs.200.00</span></h5>
+    <div class="my-0 py-3 container-fluid" id="products" style="align-items: center; background-color: #fafafa;">
+      <h3 class="py-4" style="color: #6b4028; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">MODERN FURNITURE</h3>
+      
+      <div class="mx-auto my-4 py-4 row justify-content-center">
+        <div class="mx-2 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <div class="card" style="background: url('https://img.freepik.com/free-photo/interior-design-with-armchair-potted-plant_23-2149427983.jpg'); background-size: cover; ">
+                <div class="content">
+                    <h3 style="font-family: 'Balsamiq Sans', cursive; font-size: 20px;">Arm Chair</h3>
+                    <div class="icons">
+                        <a href="#"><i class='bx bxs-cart' ></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <ul class="sci">
-          <li>
-						<a href="Shop.html"><img src="icon_5.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-          <li>
-            <a href="FID002.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-          </li>
-          <li>
-						<a href=""><img src="icon_7.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-        </ul>
-      </div>
-      <div class="card">
-				<div class="content">
-					<div class="imgBx">
-						<img src="vege_3.jpg" alt="vege_3">
-					</div>
-					<div class="contentBx">
-						<h5>PURPLE CABBAGE<br><span>Rs.200.00</span></h5>
-					</div>
-				</div>
-        <ul class="sci">
-					<li>
-						<a href="Shop.html"><img src="icon_5.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-					<li>
-						<a href="VID003.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-          <li>
-						<a href=""><img src="icon_7.png" width="50" height="50" style="border-radius: 50%;"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	  </section>
+        <div class="mx-2 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <div class="card" style="background: url('https://img.freepik.com/free-photo/circular-clock-indoors-still-life_23-2150436160.jpg'); background-size: cover; ">
+                <div class="content">
+                  <h3 style="font-family: 'Balsamiq Sans', cursive; font-size: 20px;">Wooden Table</h3>
+                    <div class="icons">
+                        <a href="#"><i class='bx bxs-cart' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-2 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+          <div class="card" style="background: url('https://img.freepik.com/free-photo/wooden-table-with-glass-vase_1203-1486.jpg'); background-size: cover; ">
+              <div class="content">
+                <h3 style="font-family: 'Balsamiq Sans', cursive; font-size: 20px;">Coffe Table</h3>
+                  <div class="icons">
+                      <a href="#"><i class='bx bxs-cart' ></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="mx-2 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <div class="card" style="background: url('https://img.freepik.com/free-photo/vertical-shot-wooden-chair-white_181624-33157.jpg'); background-size: cover; ">
+                <div class="content">
+                  <h3 style="font-family: 'Balsamiq Sans', cursive; font-size: 20px;">Wooden Chair</h3>
+                    <div class="icons">
+                        <a href="#"><i class='bx bxs-cart' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-2 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <div class="card" style="background: url('https://img.freepik.com/free-photo/poster-mockup-with-vertical-frame-empty-dark-blue-wall-bedroom-interior_41470-5135.jpg'); background-size: cover; ">
+                <div class="content">
+                  <h3 style="font-family: 'Balsamiq Sans', cursive; font-size: 20px;">California King</h3>
+                    <div class="icons">
+                        <a href="#"><i class='bx bxs-cart' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <!--Featured Products-->
 
     <!--Offers-->
-    <div class="my-4 container-fluid" id="offers" style="height: auto;">
+    <div class="my-0 py-3 container-fluid" style="height: auto; background: linear-gradient( -90deg, #d2b48c,  #d2b48c 75%, white 75%, #c4a174, #c4a174 51%, #be9156 49% );" >
       <div class="row">
-        <div class="col-sm- 12 col-md-7 col-xl-7 col-xxl-7" style="height: 70vh; background-color: rgba(112, 184, 45, 0.555);">
-          <img class="mx-0 my-2 img-responsive" src="img_7.jpg" width="100%" height="450px">
+        <div class="col-sm-5 col-md-7 col-xl-6 col-xxl-8">
+          <img src="https://img.freepik.com/free-photo/armchair-green-living-room-with-copy-space_43614-910.jpg" class="mx-0 my-3 img-fluid">
         </div>
-        <div class="px-4 py-4 col-sm-12 col-md-5 col-xl-5 col-xxl-5" style="height: 70vh; display: block; margin-left: auto; margin-right: auto;">
-          <h4 class="py-3" style="color: #6ab04c; font-size: 30px; font-family: 'Courgette', cursive; text-align: center;">Best Price For You</h4>
-          <h3 class="py-3" style="color: #2d302b; font-size: 25px; text-align: center;">Deal of the day</h3>
-          <h4 class="py-3" style="color: #353634; font-size: 20px; text-align: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h4>
-          <div class="py-2 row" style="justify-content: center;">
-            <div class="col">
-              <h4 style="text-align: center;font-weight: 400;">Brocalli</h4>
-              <h5 style="text-align: center; color:#337100; font-size: 15px; ">Rs.200.00 now only Rs.150.00</h5>
-            </div>
-            <div class="col">
-              <h4 style="text-align: center;font-weight: 400;">Orange</h4>
-              <h5 style="text-align: center; color:#337100;font-size: 15px; ">Rs.200.00 now only Rs.150.00</h5>
-            </div>
-          </div>
-          <button type="button" class="mt-3 btn btn-outline-success" style="width: 200px; margin-left: 30%;" onclick = "window.location.href='Shop.html';" >Buy Now</button>
+        <div class="col-sm-5 col-md-5 col-xl-6 col-xxl-4" style="height: 70vh; color: white; ">
+          <h3 class="py-3" style="font-size: 65px; text-align: center;">50% OFF</h3>
+          <h4 class="pb-3" style="font-size: 40px; text-align: center;">ON SOFA</h4>
+          <p style="font-size: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fuga aut eos recusandae officia nostrum illum doloremque voluptatem dolores, 
+            neque error laudantium cum accusamus iure sint blanditiis minima nisi possimus!</p>
+          <button type="button" class="mt-3 btn" style="width: 150px; margin-left: 30%; background-color: #be9156; color: white; align-items: center;" onclick = "window.location.href='Shop.html';" >Buy Now</button>
         </div>
       </div>
     </div>
     <!--Offers-->
 
     <!--All Products-->
-    <div class="my-7 py-4 container-fluid" id="allitems" style="height: auto;">
-      <h3 class="py-4" style="color: #6ab04c; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">Our Products</h3>
-      <h4 class="py-3" style="font-size: 15px; text-align: center; color: #312f2f;">Protect the health of every home</h4>
+    <div class="my-0 py-3 container-fluid" id="allitems"  style="align-items: center; background-color: #fafafa;">
+      <h3 class="py-4" style="color: #6b4028; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">SHOP BY CATEGORY</h3>
       
-      <div class="my-3 py-3 row">
-        <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
-          <div class="content">
-            <a href="Shop.html" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="img_5.jpg" alt="image_5" loading="lazy">
-              <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">VEGETABLES</h3>
-              </div>
-            </a>
+      <div class="mx-auto my-4 py-4 row justify-content-center">
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-2 col-xxl-3">
+            <div class="cardBox" onclick="window.location.href='Shop.html';">
+                <div class="Itemcard" style="background-image: url('https://img.freepik.com/free-vector/realistic-wardrobe-with-clothes_52683-72861.jpg'); background-size: cover;">
+                  <div class="cardtext">
+                    <h3>WARDROBE</h3>
+                  </div>
+                </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
-          <div class="content">
-            <a href="Shop.html" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="img_5.jpg" alt="image_5" loading="lazy">
-              <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">FRUITS</h3>
-              </div>
-            </a>
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-2 col-xxl-3">
+            <div class="cardBox" onclick="window.location.href='Shop.html';">
+                <div class="Itemcard" style="background-image: url('https://img.freepik.com/premium-photo/modern-living-room-interior-with-sofa-green-plants-lamp-table-white-wall_41470-779.jpg'); background-size: cover;">
+                  <div class="cardtext">
+                    <h3>SOFA</h3>
+                  </div>
+                </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
-          <div class="content">
-            <a href="Shop.html" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="img_6.jpg" alt="image_6" loading="lazy">
-              <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">DRIES</h3>
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-2 col-xxl-3">
+            <div class="cardBox" onclick="window.location.href='Shop.html';">
+                <div class="Itemcard" style="background-image: url('https://img.freepik.com/premium-photo/white-bedroom-interior_43614-132.jpg'); background-size: cover;">
+                  <div class="cardtext">
+                    <h3>BED</h3>
+                  </div>
+                </div>
             </div>
-            </a>
+        </div>
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-2 col-xxl-3">
+            <div class="cardBox" onclick="window.location.href='Shop.html';">
+                <div class="Itemcard" style="background-image: url('https://img.freepik.com/premium-psd/beautiful-desk-concept-mock-up_23-2148624765.jpg'); background-size: cover;">
+                  <div class="cardtext">
+                    <h3>TABLE</h3>
+                  </div>
+                </div>
             </div>
         </div>
       </div>
     </div>
     <!--All Products-->
 
+    <!--Offers-->
+    <div class="container-fluid" style="height: auto; background: linear-gradient( 45deg, #33d8c2,  #e6d262 75%, white 75%, #85afdf, #78d2ee 61%, #e77d3f 70% );" >
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4" style="height: 70vh; color: white; ">
+          <h3 class="py-3" style="font-size: 75px; text-align: center;">FREE..!!!</h3>
+          <h4 class="pb-3" style="font-size: 40px; text-align: center;">Special Offer</h4>
+          <p style="font-size: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fuga aut eos recusandae officia nostrum illum doloremque voluptatem dolores, 
+            neque error laudantium cum accusamus iure sint blanditiis minima nisi possimus!</p>
+          <button type="button" class="mt-3 btn" style="width: 150px; margin-left: 30%; background-color: #0a0a0a; color: white; align-items: center;" onclick = "window.location.href='Shop.html';" >Buy Now</button>
+        </div>
+        <div class="px-2 py-4 col-sm-12 col-md-8 col-xl-8 col-xxl-8" style="align-items: center; justify-content: center;">
+          <img src="https://img.freepik.com/free-photo/bedroom-view-with-bed-arrangement-decor_23-2150551138.jpg" class="mx-auto my-3 img-fluid" style="height: 350px; width: 280px; border-radius: 50%;">
+          <img src="https://img.freepik.com/free-photo/comfortable-pillow-bed_74190-6904.jpg" class="mx-auto my-3 img-fluid" style="height: 350px; width: 280px; border-radius: 50%;">
+          <img src="https://img.freepik.com/free-photo/hotel-room-with-lit-lamp_1203-547.jpg" class="mx-auto my-3 img-fluid" style="height: 350px; width: 280px; border-radius: 50%;">
+        </div>
+      </div>
+    </div>
+    <!--Offers-->
+
+    <!--Feedback-->
+    <div class="my-0 py-3 container-fluid" style="align-items: center; background-color: #fafafa;">
+      <h3 class="py-4" style="color: #6b4028; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">OUR CUSTOMER SAYS</h3>
+      
+      <div class="mx-auto my-4 py-4 row justify-content-center">
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <main class="l-card">
+                <section class="l-card__text">
+                    <p>
+                        Service from start to finish was great, and good quality stools !!
+                    </p>
+                </section>
+                <section class="l-card__user">
+                    <div class="l-card__userImage">
+                        <img src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100234.jpg" alt="Naruto">
+                    </div>
+                    <div class="l-card__userInfo">
+                        <span>Michelle Murray</span>
+                        <span>Seventh Hokage</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <main class="l-card">
+                <section class="l-card__text">
+                    <p>
+                        Great furniture, great prices, and really helpful staff..... The furniture is always of a good quality... Thanks
+                    </p>
+                </section>
+                <section class="l-card__user">
+                    <div class="l-card__userImage">
+                        <img src="https://img.freepik.com/free-photo/3d-illustration-teenager-with-funny-face-glasses_1142-50955.jpg" alt="Naruto">
+                    </div>
+                    <div class="l-card__userInfo">
+                        <span>James William</span>
+                        <span>Seventh Hokage</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="mx-3 my-2 col-sm-12 col-md-5 col-xl-3 col-xxl-3">
+            <main class="l-card">
+                <section class="l-card__text">
+                    <p>
+                        This is a highly recommended company. We were sent sample chairs and nothing was too much trouble.
+                    </p>
+                </section>
+                <section class="l-card__user">
+                    <div class="l-card__userImage">
+                        <img src="https://avatars.githubusercontent.com/u/20525486?v=4" alt="Naruto">
+                    </div>
+                    <div class="l-card__userInfo">
+                        <span>Naruto Uzumaki</span>
+                        <span>Seventh Hokage</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    <!--Feedback-->
+
     <!-- Footer -->
-    <div class="mx-0 px-0 container-fluid" id="footer" style="height: auto;">
-      <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1;">
+    <div class="mx-0 px-0 my-0 pt-3 container-fluid" id="footer" style="height: auto; background-color: #d2b48c;">
+      <footer class="text-center text-lg-start">
         <section class="">
         <div class="py-4 container text-center text-md-start mt-5">
           <div class="row">
           <div class="col-md-3 col-lg-3 col-xl-3">
-            <a class="navbar-brand" href="#" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; font-weight: 700; color: rgb(101, 230, 101);">ORGOFOODS</a>
-            <p class="py-2">
+            <a class="navbar-brand" href="#" style="color: #6b4028; font-family: Dancing Script; font-size: 30px; font-weight: 700; letter-spacing: 2px;"><i>Furni<span style="color: #896540; font-family: Dancing Script;">Sense</span></i></a>
+            <p class="py-2" style=" color: white">
             Here you can use rows and columns to organize your footer
             content. Lorem ipsum dolor sit amet, consectetur adipisicing
             elit.
             </p>
           </div>
-          <div class="col-md-2 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-2 col-lg-3 col-xl-3 mb-4" style=" color: white">
             <h6 class="text-uppercase fw-bold">Menu</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
             <p>
-              <a href="Home.html" class="text-dark" style="text-decoration: none;">Home</a>
+              <a href="Home.html" style="text-decoration: none;  color: white">Home</a>
             </p>
             <p>
-              <a href="Shop.html" class="text-dark" style="text-decoration: none;">Shop</a>
+              <a href="Shop.html" style="text-decoration: none;  color: white">Shop</a>
             </p>
             <p>
-            <a href="About.html" class="text-dark" style="text-decoration: none;">About</a>
+            <a href="About.html" style="text-decoration: none;  color: white">About</a>
             </p>
             <p>
-            <a href="Contact.html" class="text-dark" style="text-decoration: none;">Contact</a>
+            <a href="Contact.html" style="text-decoration: none;  color: white">Contact</a>
             </p>
           </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-3 mb-4" style=" color: white">
             <h6 class="text-uppercase fw-bold">Help</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
             <p>
-            <a href="#" class="text-dark" style="text-decoration: none;">Shipping Information</a>
+            <a href="#" style="text-decoration: none;  color: white">Shipping Information</a>
             </p>
             <p>
-            <a href="#" class="text-dark" style="text-decoration: none;">Terms & Conditions</a>
+            <a href="#" style="text-decoration: none;  color: white">Terms & Conditions</a>
             </p>
             <p>
-            <a href="#" class="text-dark" style="text-decoration: none;">FAQs</a>
+            <a href="#" style="text-decoration: none;  color: white">FAQs</a>
             </p>
             <p>
-            <a href="#" class="text-dark" style="text-decoration: none;">Privacy Policy</a>
+            <a href="#" style="text-decoration: none; color: white">Privacy Policy</a>
             </p>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4" style=" color: white">
             <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
             <p><i class='bx bxs-home'></i> Kandy Road, Colombo.</p>
             <p><i class='bx bxs-envelope' ></i>  orgofoods@info.com</p>
             <p><i class='bx bxs-phone-call' ></i>  + 94 234 567 88</p>
@@ -332,8 +350,8 @@
           </div>
         </div>
         </section>
-        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2023 Copyright | Terms & Policy
+        <div class="text-center p-1" style="background-color: rgba(247, 132, 2, 0.2); color: white;">
+        © 2024 Copyright | Terms & Policy
         </div>
       </footer>
     </div>

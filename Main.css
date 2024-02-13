@@ -1,13 +1,34 @@
+
+.gallery {
+    --g: 6px; /* the gap */
+    display: grid;
+    width: 50%; /* the size */
+    aspect-ratio: 1;
+    grid: auto-flow 1fr/repeat(3,1fr);
+    gap: var(--g);
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+  
+.gallery img:nth-child(2) {
+    grid-area: 1/2/span 2/span 2;
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + var(--g)/2) 100%,0 calc(50% - var(--g)/2))
+}
+
+.gallery img:nth-child(3) {
+    grid-area: 2/1/span 2/span 2;
+    clip-path: polygon(0 0,calc(50% - var(--g)/2) 0,100% calc(50% + var(--g)/2),100% 100%,0 100%);
+}  
+
 #services img{
-    border-radius: 50%; 
     display: block; 
     margin-left: auto; 
     margin-right: auto;
-}
-
-#services img:hover{
-    background-color: #5fd42d;
-    cursor: pointer;
 }
 
 .products {
@@ -15,165 +36,159 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
+    
 }
 
-.container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px 0;
-}
-
-.container .card {
-    position: relative;
-    width: 250px;
+.card{
     height: 350px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-}
-
-.container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s;
-}
-
-.container .card:hover .content {
-    transform: translateY(-20px);
-}
-
-.container .card .content .imgBx {
-      position: relative;
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-}
-
-.container .card .content .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.container .card .content .contentBx h5 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    margin: 20px 0 10px;
-    line-height: 1.8em;
-}
-
-.container .card .content .contentBx h5 span {
-    font-size: 15px;
-    font-weight: 600;
-    color: #5fd42d;
-}
-
-.container .card .sci {
-    position: absolute;
-    bottom: 30px;
-    display: flex;
-}
-
-.container .card .sci li {
-    list-style: none;
-    margin-right: 20px;
-    transform: translateY(20px);
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.container .card:hover .sci li { 
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.container .card .sci a {
-    color: blue;
-}
-  
-#allitems .content {
-    position: relative;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
     overflow: hidden;
 }
 
-#allitems .content .content-overlay {
-    background: rgba(0,0,0,0.7);
+.content{
+    width:100%;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.582);
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.35s ease;
+}
+
+.card:hover .content{
+    transform: translateY(0);
+}
+
+.icons{
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons i{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.274);
+    transition: all 0.2s ease;
+}
+
+.icons i:hover{
+    color: rgba(255, 255, 255, 0.438);
+}
+
+#allitems .cardBox {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 10px 0px;
+}
+  
+#allitems .Itemcard {
     position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-#allitems .content:hover .content-overlay{
-    opacity: 1;
-}
-
-#allitems .content-image{
-    width: 100%;
-}
-
-#allitems .content-details {
-    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    color: #080808;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;  
+}
+  
+#allitems .Itemcard .cardtext h3 {
+    font-size: 2.0rem;
+    padding-bottom: 10px;
+    font-weight: 800;
 }
 
-#allitems .content:hover .content-details{
-    top: 50%;
-    left: 50%;
+#allitems .Itemcard .cardtext {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+  
+#allitems .Itemcard:hover .cardtext {
+    transform: translateY(0);
     opacity: 1;
 }
 
-#allitems .content-details h3{
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
+.l-card {
+	width: auto;
+	min-width: 300px;
+	max-width: 420px;
+	height: auto;
+	background: #f5f5f5;
+	color: #272727;
+	padding: 50px;
+	box-shadow: 0px 7px 12px rgba(100, 100, 100, 0.4);
 }
 
-.fadeIn-bottom{
-    top: 80%;
+.l-card__text p {
+	font-size: 30px;
+	font-family: "Vollkorn", serif;
+	font-weight: 400;
+	color: #3f3f55;
+	text-align: left;
+}
+
+.l-card__text p::after {
+	content: "\201D";
+	display: inline;
+	color: #999;
+}
+
+.l-card__text p::before {
+	content: "\201C";
+	display: inline;
+	color: #999;
+}
+
+.l-card__user {
+	display: flex;
+	flex-direction: row;
+	padding-top: 24px;
+	margin-top: 12px;
+	align-items: center;
+}
+.l-card__userImage {
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.l-card__userImage img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.l-card__userInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+}
+
+.l-card__userInfo span:nth-child(1) {
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #3f3f55;
+}
+.l-card__userInfo span:nth-child(2) {
+	color: #adada6;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 2px;
 }
 
 #header a:link{
@@ -182,39 +197,115 @@
 }
 
 #allproducts .btn-outline-success:hover{
-    background-color: #4fb324;
-}
-
-#details{
-    padding: 10px;
-    font-family: 'Courgette', cursive;
-    background-color: rgb(111, 207, 73);
-    text-align: center;
-    color: white;
-}
-#details h3{
-    font-size: 30px;
-}
-
-#details h4{
-    font-size: 20px;
+    background-color: #6b4028;
 }
 
 #feedback{
     text-align: center;
 }
 
-#feedback .row{
-    align-items: center;
-    justify-content: center;
+#feedback .card {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 17em;
+    margin: 1em;
+    text-align: center;
+    margin-inline: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-#feedback img{
-    border-radius: 50%; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    margin-top: 15px;
+#feedback .card img {
+    max-width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0%);
+}
+
+#feedback .description {
+    padding: 0 1em 1em 1em;
+}
+  
+.detailcard{
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+}
+
+.detailcard .face{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.detailcard .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.detailcard:hover .face.face1{
+    background: #d16e1c;
+    transform: translateY(0);
+}
+
+.detailcard .face.face1 .detailtext{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.detailcard:hover .face.face1 .detailtext{
+    opacity: 1;
+}
+
+.detailcard .face.face1 .detailtext img{
+    max-width: 100px;
+}
+
+.detailcard .face.face1 .detailtext h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.detailcard .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+}
+
+.detailcard:hover .face.face2{
+    transform: translateY(0);
+}
+
+.detailcard .face.face2 .detailtext p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.detailcard .face.face2 .detailtext a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.detailcard .face.face2 .detailtext a:hover{
+    background: #333;
+    color: #fff;
 }
 
 #contact{
@@ -250,7 +341,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background-color: rgb(101, 230, 101);
+    background-color: rgb(230, 201, 36);
     color: white;
 }
 
@@ -284,7 +375,7 @@
     width: auto;
     text-align: center;
     top: 500px;
-    border: 1px solid rgb(101, 230, 101);
+    border: 5px inset rgb(196, 162, 15);
 }
 
 .text-box h2{
@@ -318,7 +409,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    border: 1px solid rgb(101, 230, 101);
+    border: 1px solid rgb(243, 199, 76);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,16 +504,15 @@
     .col-25 {
       margin-bottom: 20px;
     }
+
+    #subHeader .h1{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width : 375px) {
-    .carousel-item img{
-        height: auto;
-    }
-
-    .carousel-caption .h1{
-        font-weight: 400;
-        font-size: 20px !important;
+    #subHeader .imgCol{
+        background-image: url('https://img.freepik.com/free-photo/yellow-plastic-chair-against-white-wall_53876-75127.jpg');
     }
 
     #service col{

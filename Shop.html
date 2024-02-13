@@ -16,249 +16,177 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="Main.css">
    
+    <style>
+    .grid {
+  background: #f5de7a;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.grid-item img:hover{
+  box-shadow: 2px #e9ecef;
+  transform: scale(1.1);
+}
+
+    </style>
 </head>
 <body>
    
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#" style="color: #5fd42d; font-size: 30px; font-weight: 700;">ORGOFOODS</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <div class="d-flex">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style=" font-size: 20px;">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" style="color: #337100;" href="Home.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: #337100;" href="Shop.html">SHOP</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: #337100;" href="About.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: #337100;" href="Contact.html">CONTACT</a>
-                    </li>
-                  </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d2b48c;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="color: #6b4028; font-family: Dancing Script; font-size: 30px; font-weight: 700; letter-spacing: 2px;"><i>Furni<span style="color: #896540; font-family: Dancing Script;">Sense</span></i></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0" style=" font-size: 15px; font-weight: 600;">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page"  href="Home.html">HOME</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Shop.html">SHOP</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="About.html">ABOUT</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <div class="d-flex">
           </div>
         </div>
+      </div>
     </nav>
     <!--Navigation Bar-->
 
     <!--Header-->
-    <div class="container-fluid" id="header" style="background: url('img_4.jpg') no-repeat; height: 70vh; position: relative; text-align: center; color: white; background-size: cover;">
-        <div class="centered" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <h6><a href="Home.html" style="text-decoration: none; color: white;">Home</a> &nbsp; | &nbsp; Shop</h6>
-            <h2 style="font-family: 'Amatic SC', sans-serif; font-size: 60px;">SHOP</h2>
+    <div class="container-fluid" id="subHeader" style="background-color: #fafafa;">
+        <div class="row justify-content-center" style="height: 60vh;">
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/premium-photo/interior-has-armchair-empty-dark-green-wall_41470-1459.jpg'); background-size: cover;"></div>
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/premium-photo/modern-interior-living-room-with-cabinet-armchair-dark-blue-wall_41470-3544.jpg'); background-size: cover;"></div>
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/premium-photo/mock-up-green-wall-with-green-sofa-decor-living-room_41470-4659.jpg'); background-size: cover;"></div>
+          <div class="imgCol col-md-5" style="background-image: url('https://img.freepik.com/free-photo/yellow-plastic-chair-against-white-wall_53876-75127.jpg');">
+            <h1 style="font-size: 105px; padding-top: 25px; font-weight: 800; text-align: center; color: #896540;">SHOP</h1>
+            <hr style="color: #b15d0a; height: 5px;">
+            <h3 style="font-size: 45px; padding-bottom: 10px; font-weight: 400; text-align: center;"><a href="Home.html" style="text-decoration: none; color: #6b4028;">HOME</a><span style="color: #6b4028;"> | SHOP</span> </h3>
+          </div>
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/free-photo/sofa-yellow-living-room-interior-with-copy-space_43614-858.jpg'); background-size: cover;"></div>
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/free-photo/armchair-yellow-living-room-mockup_43614-862.jpg'); background-size: cover;"></div>
+          <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/free-photo/sofa-living-room-interior-with-copy-space_43614-853.jpg'); background-size: cover;"></div>
         </div>
     </div>
     <!--Header-->
 
     <!--Our Products-->
-    <div class="my-7 py-4 container-fluid">
-        <h3 class="py-4" id="allproducts" style="color: #6ab04c; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">Our Products</h3>
+    <div class="mt-7 pt-4 container-fluid" style="background-color: #fafafa;">
+        <h3 class="py-4" id="allproducts" style="color: #6b4028; font-size: 45px; font-family: 'Courgette', cursive; text-align: center;">FURNITURE GALLERY</h3>
 
-        <div class="row mt-3 mb-4 button-group filter-button-group">
-            <div class="col d-flex justify-content-center">
-                <button type="button" data-filter="*" class="mx-2 btn btn-outline-success">All</button>
-                <button type="button" data-filter=".vegiatable" class="mx-2 btn btn-outline-success">Vegiatables</button>
-                <button type="button" data-filter=".fruit" class="mx-2 btn btn-outline-success">Fruites</button>
-                <button type="button" data-filter=".dries" class="mx-2 btn btn-outline-success">Dries</button>
-            </div>
-        </div>
-
-        <section class="my-3 products">
-            <div class="container" id="product-list">
-                <div class="card vegiatable">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="vege_1.jpg" alt="vege_1">
-                        </div>
-                        <div class="contentBx">
-                            <h5>CARROTS<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="VID001.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card fruit">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="fruit_1.jpg" alt="fruit_1">
-                        </div>
-                        <div class="contentBx">
-                            <h5>apple<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="FID001.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card dries">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="dries_2.jpg" alt="dries_2">
-                        </div>
-                        <div class="contentBx">
-                            <h5>mung beans<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="DID002.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card vegiatable">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="vege_2.jpg" alt="vege_2">
-                        </div>
-                        <div class="contentBx">
-                            <h5>BROCOLLI<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="VID002.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card fruit">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="fruit_2.jpg" alt="fruit_2">
-                        </div>
-                        <div class="contentBx">
-                            <h5>orange<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="FID002.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card dries">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="dries_1.jpg" alt="dries_1">
-                        </div>
-                        <div class="contentBx">
-                            <h5>red beans<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="DID001.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card fruit">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="fruit_3.jpg" alt="fruit_3">
-                        </div>
-                        <div class="contentBx">
-                            <h5>STRAWBERRY<br><span>Rs.200.000</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="FID003.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card vegiatable">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="vege_3.jpg" alt="vege_3">
-                        </div>
-                        <div class="contentBx">
-                            <h5>PURPLE CABBAGE<br><span>Rs.200.00</span></h5>
-                        </div>
-                    </div>
-                    <ul class="sci">
-                        <li>
-                            <a href="VID003.html"><img src="icon_6.png" width="50" height="50" style="border-radius: 50%;"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-          </section>
-    </div>    
+        <div class="grid" id="product-list">
+            <div class="grid-sizer"></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/premium-photo/texture-pillows-beige-sofa-mint-blanket-small-table-with-candles-stylish-scandinavian-interior-living-room-with-sofa-pillows-elegant-personal-accessories-plants-brick-wall_85672-2045.jpg" onclick = "window.location.href='TID001.html';"  ></div>
+            <div class="grid-item wardrobe"><img src="https://img.freepik.com/premium-photo/groom-s-blue-jacket-hanger-vintage-wardrobe-groom-s-morning-wedding-details-preparation-wedding-ceremony_158155-2009.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/free-photo/circular-clock-indoors-still-life_23-2150436160.jpg" ></div>
+            <div class="grid-item sofa"><img src="https://img.freepik.com/free-photo/interior-modern-living-room-with-brown-armchair-bookshelf_587448-8148.jpg" ></div>
+            <div class="grid-item bed"><img src="https://img.freepik.com/free-photo/poster-mockup-with-vertical-frame-empty-dark-blue-wall-bedroom-interior_41470-5135.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/premium-photo/stylish-boho-vintage-dining-room-interior-with-poster-mock-up-round-table-with-rattan-chair-commode-plants-brown-wall-rattan-lamp-mock-up-poster-template_431307-8819.jpg" ></div>
+            <div class="grid-item wardrobe"><img src="https://img.freepik.com/premium-photo/elegant-minimalist-male-walk-wardrobe-with-clothes-hanging-rods-shelves-drawers_177786-6696.jpg" ></div>
+            <div class="grid-item sofa"><img src="https://img.freepik.com/premium-photo/modern-composition-living-room-with-design-gray-armchair-furniture-gold-pot-with-beautiful-plant-elegant-personal-accessories-gray-wall-panelling-with-shelf-stylish-home-staging_431307-359.jpg" ></div>
+            <div class="grid-item sofa"><img src="https://img.freepik.com/free-photo/chic-modern-luxury-aesthetics-style-living-room-blue-tone_53876-125839.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/premium-photo/free-photo-furniture_359917-1370.jpg" ></div>
+            <div class="grid-item wardrobe"><img src="https://img.freepik.com/premium-photo/white-wardrobe-with-wooden-doors-white-doors-with-white-top-that-says-word-it_889227-5156.jpg" ></div>
+            <div class="grid-item sofa"><img src="https://img.freepik.com/free-psd/cozy-living-room-with-brown-sofa-large-window_176382-1509.jpg" ></div>
+            <div class="grid-item bed"><img src="https://img.freepik.com/free-photo/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv_105762-2064.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/premium-photo/stylish-dining-room-with-round-table-rattan-chair-wooden-commode-poster-kitchen-accessories-beige-wall-with-mock-up-poster-home-decor-template_431307-8935.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/free-psd/classic-bedroom-hotel-room-with-double-bed_176382-88.jpg" ></div>
+            <div class="grid-item table"><img src="https://img.freepik.com/free-photo/black-chairs-with-wooden-table_1203-494.jpg" ></div>
+        </div>   
     <!--Our Products-->
 
     <!-- Footer -->
-    <div class="mx-0 px-0 container-fluid" id="footer" style="height: auto;">
-        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1;">
-          <section class="">
-          <div class="py-4 container text-center text-md-start mt-5">
-            <div class="row">
-            <div class="col-md-3 col-lg-3 col-xl-3">
-              <a class="navbar-brand" href="#" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; font-weight: 700; color: rgb(101, 230, 101);">ORGOFOODS</a>
-              <p class="py-2">
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-              </p>
-            </div>
-            <div class="col-md-2 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold">Menu</h6>
-              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
-              <p>
-                <a href="Home.html" class="text-dark" style="text-decoration: none;">Home</a>
-              </p>
-              <p>
-                <a href="Shop.html" class="text-dark" style="text-decoration: none;">Shop</a>
-              </p>
-              <p>
-              <a href="About.html" class="text-dark" style="text-decoration: none;">About</a>
-              </p>
-              <p>
-              <a href="Contact.html" class="text-dark" style="text-decoration: none;">Contact</a>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold">Help</h6>
-              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
-              <p>
-              <a href="#" class="text-dark" style="text-decoration: none;">Shipping Information</a>
-              </p>
-              <p>
-              <a href="#" class="text-dark" style="text-decoration: none;">Terms & Conditions</a>
-              </p>
-              <p>
-              <a href="#" class="text-dark" style="text-decoration: none;">FAQs</a>
-              </p>
-              <p>
-              <a href="#" class="text-dark" style="text-decoration: none;">Privacy Policy</a>
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
-              <h6 class="text-uppercase fw-bold">Contact</h6>
-              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
-              <p><i class='bx bxs-home'></i> Kandy Road, Colombo.</p>
-              <p><i class='bx bxs-envelope' ></i>  orgofoods@info.com</p>
-              <p><i class='bx bxs-phone-call' ></i>  + 94 234 567 88</p>
-              <p><i class='bx bxs-phone-call' ></i>  + 94 234 567 89</p>
-            </div>
-            </div>
+    <div class="mx-0 px-0 my-0 pt-3 container-fluid" id="footer" style="height: auto; background-color: #d2b48c;">
+      <footer class="text-center text-lg-start">
+        <section class="">
+        <div class="py-4 container text-center text-md-start mt-5">
+          <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3">
+            <a class="navbar-brand" href="#" style="color: #6b4028; font-family: Dancing Script; font-size: 30px; font-weight: 700; letter-spacing: 2px;"><i>Furni<span style="color: #896540; font-family: Dancing Script;">Sense</span></i></a>
+            <p class="py-2" style=" color: white">
+            Here you can use rows and columns to organize your footer
+            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            </p>
           </div>
-          </section>
-          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2023 Copyright | Terms & Policy
+          <div class="col-md-2 col-lg-3 col-xl-3 mb-4" style=" color: white">
+            <h6 class="text-uppercase fw-bold">Menu</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
+            <p>
+              <a href="Home.html" style="text-decoration: none;  color: white">Home</a>
+            </p>
+            <p>
+              <a href="Shop.html" style="text-decoration: none;  color: white">Shop</a>
+            </p>
+            <p>
+            <a href="About.html" style="text-decoration: none;  color: white">About</a>
+            </p>
+            <p>
+            <a href="Contact.html" style="text-decoration: none;  color: white">Contact</a>
+            </p>
           </div>
-        </footer>
+          <div class="col-md-3 col-lg-3 col-xl-3 mb-4" style=" color: white">
+            <h6 class="text-uppercase fw-bold">Help</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
+            <p>
+            <a href="#" style="text-decoration: none;  color: white">Shipping Information</a>
+            </p>
+            <p>
+            <a href="#" style="text-decoration: none;  color: white">Terms & Conditions</a>
+            </p>
+            <p>
+            <a href="#" style="text-decoration: none;  color: white">FAQs</a>
+            </p>
+            <p>
+            <a href="#" style="text-decoration: none; color: white">Privacy Policy</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mb-4" style=" color: white">
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #6b4028; height: 2px"/>
+            <p><i class='bx bxs-home'></i> Kandy Road, Colombo.</p>
+            <p><i class='bx bxs-envelope' ></i>  orgofoods@info.com</p>
+            <p><i class='bx bxs-phone-call' ></i>  + 94 234 567 88</p>
+            <p><i class='bx bxs-phone-call' ></i>  + 94 234 567 89</p>
+          </div>
+          </div>
+        </div>
+        </section>
+        <div class="text-center p-1" style="background-color: rgba(247, 132, 2, 0.2); color: white;">
+        © 2024 Copyright | Terms & Policy
+        </div>
+      </footer>
     </div>
     <!-- Footer -->
 
@@ -271,15 +199,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // init Isotope
-        var $grid = $('#product-list').isotope({
-        });
 
-        // filter items on button click
-        $('.filter-button-group').on( 'click', 'button', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
     </script>  
     <!--Script files-->  
 </body>
