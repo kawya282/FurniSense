@@ -11,7 +11,7 @@ The website is designed to be accessible on various devices and screen sizes.
 - Efficient data management with JSON
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
+1. Clone the repository: `git clone https://github.com/kawya282/FurniSense.git`
 2. Open the project directory in your preferred code editor.
 
 ## Usage
