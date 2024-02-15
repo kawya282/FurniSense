@@ -281,6 +281,40 @@
     color: #fff;
 }
 
+#product-list{
+    background: #f5de7a;
+  }
+  
+  /* clear fix */
+ #product-list:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+ #product-list .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+  
+#product-list  .grid-item {
+    float: left;
+  }
+  
+#product-list  .grid-item img {
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  
+#product-list  .grid-item img:hover{
+    box-shadow: 2px #e9ecef;
+    transform: scale(1.1);
+  }
+  
+
 #contact{
     text-align: center;
 }

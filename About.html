@@ -17,6 +17,9 @@
     <!--Linked box icons-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Linked aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Stylesheet-->
     <link rel="stylesheet" href="Main.css">
     
@@ -53,7 +56,7 @@
     <!--Navigation Bar-->
 
     <!--Header-->
-    <div class="container-fluid" id="subHeader" style="background-color: #fafafa;">
+    <div class="container-fluid" id="subHeader" data-aos="fade-right" style="background-color: #fafafa;">
         <div class="row justify-content-center" style="height: 60vh;">
           <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/premium-photo/interior-has-armchair-empty-dark-green-wall_41470-1459.jpg'); background-size: cover;"></div>
           <div class="mx-1 my-1 col-md-1" style="background-image: url('https://img.freepik.com/premium-photo/modern-interior-living-room-with-cabinet-armchair-dark-blue-wall_41470-3544.jpg'); background-size: cover;"></div>
@@ -71,9 +74,9 @@
     <!--Header-->
 
     <!--About Us-->
-    <div class="my-0 pt-3 container-fluid" id="about" style="height: auto; background-color: #fafafa;">
+    <div class="my-0 pt-3 container-fluid"  id="about" style="height: auto; background-color: #fafafa;">
         <div class="row align-items-center">
-            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-1"  >
+            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-1" data-aos="fade-up" >
                 <img src="https://img.freepik.com/free-photo/interior-designer-working-with-young-couple_155003-27036.jpg" class="img-fluid">
             </div>
             <div class="pt-4 col-sm- 12 col-md-5 col-xl-4 col-xxl-4 order-sm-1">
@@ -88,10 +91,10 @@
               <p style="padding-top: 15px">Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Enim ut sem viverra aliquet eget sit amet.</p>
             </div>
-            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-3 order-sm-3">
+            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-3 order-sm-3" data-aos="fade-up">
               <img src="https://img.freepik.com/premium-photo/female-shop-assistant-checking-with-data-tablet-while-working-furniture-store_8595-35669.jpg" class="img-fluid">
             </div>
-            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-5 order-sm-4" >
+            <div class="px-4 py-3 mb-4 col-sm-12 col-md-7 col-xl-7 col-xxl-8 order-5 order-sm-4" data-aos="fade-up" >
               <img src="https://img.freepik.com/free-photo/scenery-designers-work_23-2149741834.jpg" class="img-fluid">
             </div>
             <div class="pt-4 col-sm- 12 col-md-5 col-xl-4 col-xxl-4 order-4 order-sm-5">
@@ -174,7 +177,7 @@
     <!--Services-->
 
     <!--Feedback-->
-    <div class="my-0 pt-3 container-fluid" id="feedback" style="height: auto; background-color: #fafafa;">
+    <div class="my-0 pt-3 container-fluid" id="feedback" data-aos="fade-up" style="height: auto; background-color: #fafafa;">
       <h3 class="py-4" style="color: #6b4028; font-size: 45px; font-family:Georgia, 'Times New Roman', Times, serif; text-align: center;">OUR TEAM</h3>
       
         <div class="my-0 py-3 row justify-content-center">
@@ -275,6 +278,12 @@
       </footer>
     </div>
     <!-- Footer -->
-    
+    <!--Script-->
+    <script>
+      AOS.init({
+        duration: 1200,
+      })
+    </script>
+    <!--Script-->
 </body>
 </html>
